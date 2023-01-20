@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+{% block footer %}
+    {% block scripts %}
+        <!-- Iconify -->
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+        <!-- Typed JS-->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <!--Jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+        <!-- Owl Carousel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <!-- Custom JS-->
+        <script src="{{ url_for('static', filename='javascript/customjs.js') }}"></script>
+        <!-- Bootstrap 5 -->
+        {{ bootstrap.load_js() }}
+    {% endblock %}
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-light" id="footer">
+    <section class="d-block justify-content-center border-bottom">
+        <div class="container py-3">
+        <div class="text-center">
+          <h5><span style="color: #05abc4;">FOR ANY QUERIES PLEASE DO NOT HESITATE TO CONTACT ME</span></h5>
+        </div>
+        <div  class="text-center pt-2">
+            <a href="https://www.facebook.com/bogdan.bonev.31" class="me-4 text-reset " target="_blank"><i class="fab fa-facebook-f  contact-icon icon-link"></i></a>
+            <a href="https://www.linkedin.com/in/b-bonev/" class="me-4 text-reset " target="_blank"><i class="fab fa-linkedin  contact-icon icon-link"></i></a>
+            <a href="https://www.instagram.com/b.bonevv/" class="me-4 text-reset " target="_blank"><i class="fab fa-instagram  contact-icon icon-link"></i></a>
+            <a href="https://github.com/bbonev14" class="me-4 text-reset " target="_blank"><i class="fab fa-github cst-blue-t contact-icon icon-link"></i></a>
+            <a href="mailto:bogdanbonev99@gmail.com" class="me-4 text-reset " target="_blank"><i class="fas fa-envelope  contact-icon icon-link"></i></a>
+            <a href="tel:+359-87-722-6256" class="text-reset"><i class="fas fa-phone contact-icon icon-link"></i></a>
+        </div>
+            </div>
+    </section>
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-start pt-3">
+      <div class="row">
+
+        <div class="col-md-4 col-lg-4 col-xl-4  py-3 text-center text-md-start">
+          <h6 class="text-uppercase fw-bold mb-4"><i class="fas fa-gem me-3 cst-blue-t"></i>About My Website</h6>
+          <p class="mb-2">Made with love by Bogdan Bonev.</a></p>
+          <p class="mb-2">This website is not a template. It was built by me with Flask, HTML, CSS and Bootstrap 5 and a few other stuff. And I do hope you like what I've made. </a></p>
+          <p class="mb-2">Feel free to contact me :)</a></p>
+          <a href="#home" class="btn btn-outline-primary float-center mt-2 me-2 ">Back to top</a>
+          <a href="static/assets/Bogdan-Bonev-CV.pdf" download class="btn btn-primary float-center mt-2 ">Download CV</a>
+        </div>
+
+        <div class="col-5 col-md-3 col-lg-4 col-xl-4  py-3 d-none d-md-block">
+          <h6 class="text-uppercase fw-bold mb-4 footer-icons">My links</h6>
+          <p class="text-secondary footer-text"><a href="https://github.com/bbonev14" target="_blank" class="text-reset footer-links"> <i class="fa-brands fa-github me-3 footer-icons  contact-icon"></i>bbonev14</a></p>
+          <p class="text-secondary footer-text"><a href="https://www.facebook.com/bogdan.bonev.31/" target="_blank" class="text-reset footer-links"><i class="fa-brands fa-facebook me-3 footer-icons contact-icon"></i>Bogdan Bonev</a></p>
+          <p class="text-secondary footer-text"><a href="https://www.instagram.com/b.bonevv/" target="_blank" class="text-reset footer-links"><i class="fa-brands fa-instagram me-3 footer-icons contact-icon"></i>b.bonevv</a></p>
+          <p class="text-secondary footer-text"><a href="https://www.linkedin.com/in/b-bonev/" target="_blank" class="text-reset footer-links"><i class="fa-brands fa-linkedin me-3 footer-icons contact-icon"></i>b-bonev</a></p>
+
+        </div>
+
+        <div class="col-8 col-md-5 col-lg-4 col-xl-4  py-3  d-none d-md-block">
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p class="text-secondary footer-text"><i class="fas fa-home me-3 contact-icon"></i>Plovdiv, Bulgaria</p>
+          <p class="text-secondary footer-text"><a href="mailto:bogdanbonev99@gmail.com" class="text-reset footer-links" target="_blank"><i class="fas fa-envelope me-4 contact-icon"></i>bogdanbonev99@gmail.com</a></p>
+          <p class="text-secondary footer-text"><a href="tel:+359-87-722-6256" class="text-reset footer-links"><i class="fas fa-phone me-3 contact-icon"></i>+359 877 226 256</a></p>
+        </div>
+
+      </div>
+    </div>
+
+
+  <div class="text-center py-2 border-top" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold footer-links" href="mailto:bogdanbonev99@gmail.com">Bogdan Bonev</a>
+  </div>
+      </section>
+
+</footer>
+{% endblock %}

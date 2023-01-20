@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Bogdan Bonev</title>
+
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
+
+
+    <!-- Favicon -->
+    <!--    <link href="/static/assets/images/favicon.png" rel="icon" type="image/x-icon" />-->
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/custom.css')}}" rel="stylesheet">
+
+    {% block styles %}
+    {{ bootstrap.load_css() }}
+    {% endblock %}
+
+</head>
+<header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark px-3" style="">
+        <div class="container ">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-label="Toggle navigation"
+                    aria-controls="mainNavbar" aria-expanded="false"
+                    data-bs-target="#mainNavbar">
+                <i class="fas fa-bars nav-burger"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 "></ul>
+
+                <ul class="navbar-nav col-12 my-2 justify-content-center my-md-0 text-small ">
+                    <div class="row ">
+                        <li class=" nav-item col col-4 col-md-4 col-lg-2 ">
+                            <div class="justify-content-center mt-1 mx-3 nav-buttons ">
+                                <a href="#home"><i class="fa-solid fa-house nav-icons"></i></a>
+                                <a href="#home" class="nav-link pt-0 cst-white-t">Home</a>
+                            </div>
+                        </li>
+                        <li class="nav-item col col-4  col-lg-2">
+                            <div class="justify-content-center mt-1 mx-3 nav-buttons">
+                                <a href="#skills"><i class="fa-solid fa-user-gear  nav-icons"></i></a>
+                                <a href="#skills" class="nav-link pt-0 cst-white-t">Skills</a>
+                            </div>
+                        </li>
+                        <li class="nav-item col col-4 c col-lg-2">
+                            <div class="justify-content-center mt-1 mx-3 nav-buttons">
+                                <a href="#portfolio"><i class="fa-solid fa-list nav-icons"></i></a>
+                                <a href="#portfolio" class="nav-link pt-0 cst-white-t">Portfolio</a>
+                            </div>
+                        </li>
+                        <li class="nav-item col col-4 col-lg-2">
+                            <div class="justify-content-center  mt-1 mx-3 nav-buttons">
+                                <a href="#mindset"><i class="fa-solid fa-brain nav-icons"></i></a>
+                                <a href="#mindset" class="nav-link pt-0 cst-white-t">Mindset</a>
+                            </div>
+                        </li>
+                        <li class="nav-item col col-4  col-lg-2 text-center">
+                            <div class="justify-content-center mt-1 mx-3 nav-buttons">
+                                <a href="#testimonials"><i class="fa-solid fa-comments nav-icons"></i></a>
+                                <a href="#testimonials" class="nav-link  pt-0 cst-white-t text-overflow-center">Testimonials</a>
+                            </div>
+                        </li>
+                        <li class="nav-item col col-4  col-lg-2">
+                            <div class="justify-content-center mt-1 mx-3 nav-buttons">
+                                <a href="#footer"><i class="fa-solid fa-address-card nav-icons"></i></a>
+                                <a href="#footer" class="nav-link  pt-0 cst-white-t">Contact</a>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+</header>
+{% endblock head%}
